@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter,Route,Router} from 'react-router-dom';
+import {BrowserRouter,Route} from 'react-router-dom';
 
 import Header from './Header';
 import Footer from './Footer';
@@ -12,10 +12,10 @@ const Routing =()=>{
         <BrowserRouter>
         <Header/>
 <div className='container'>
-    <Route path='/' component={Home}/>
-    <Route path='/post' component={Post}/>
+    <Route exact path='/' component={Home}/>
+    <Route exact path='/post' component={Post}/>
     <Route path='/profile' component={Profile}/>
-    <Route path='/postDetails' component={PostDetails}/> 
+    <Route path='/post/:topic' component={PostDetails}/> 
 </div>
         <Footer/>
         </BrowserRouter>

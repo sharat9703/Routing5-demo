@@ -5,7 +5,7 @@ const  Header =()=>{
     return(
            <header>
       <nav className="navbar navbar-expand-md navbar-dark bg-dark">
-        <Link className="navbar-brand" to="#">My React App</Link>
+        <Link className="navbar-brand" to={'/'}>My React App</Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -21,15 +21,21 @@ const  Header =()=>{
         <div className="collapse navbar-collapse " id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item">
-              <Link className="nav-link" to="#">
+              <Link className="nav-link" to="/">
                 <i className="fas fa-feather"></i>
                 About
               </Link>
             </li>
             <li className="nav-item dropdown">
-              <Link className="nav-link" to="#">
+              <Link className="nav-link" to="/post">
                 <i className="fa fa-dollar"></i>
-                Pricing
+                Post
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/profile">
+                <i className="fa fa-user"></i>
+                Profile
               </Link>
             </li>
           </ul>
