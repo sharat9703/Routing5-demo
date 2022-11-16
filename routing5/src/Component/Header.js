@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 const  Header =()=>{
     return(
            <header>
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <Link class="navbar-brand" to="#">My React App</Link>
+      <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+        <Link className="navbar-brand" to="#">My React App</Link>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarSupportedContent"
@@ -15,40 +15,40 @@ const  Header =()=>{
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
     
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <Link class="nav-link" to="#">
-                <i class="fas fa-feather"></i>
+        <div className="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul className="navbar-nav mr-auto">
+            <li className="nav-item">
+              <Link className="nav-link" to="#">
+                <i className="fas fa-feather"></i>
                 About
               </Link>
             </li>
-            <li class="nav-item dropdown">
-              <Link class="nav-link" to="#">
-                <i class="fa fa-dollar"></i>
+            <li className="nav-item dropdown">
+              <Link className="nav-link" to="#">
+                <i className="fa fa-dollar"></i>
                 Pricing
               </Link>
             </li>
           </ul>
     
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <Link class="nav-link" to="#">
-                <i class="fa fa-globe"></i>
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <Link className="nav-link" to="#">
+                <i className="fa fa-globe"></i>
                 EN
               </Link>
             </li>
-            <li class="nav-item dropdown">
-              <Link class="nav-link" to="#">
-                <i class="fa fa-user"></i>
+            <li className="nav-item dropdown">
+              <Link className="nav-link" to="#">
+                <i className="fa fa-user"></i>
                 Login
               </Link>
             </li>
-            <li class="nav-item">
-              <button class="btn bg-white nav-link text-dark">
+            <li className="nav-item">
+              <button className="btn bg-white nav-link text-dark">
                 Sign Up
               </button>
             </li>
